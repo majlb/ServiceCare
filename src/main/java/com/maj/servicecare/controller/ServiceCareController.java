@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "*")
 public class ServiceCareController {
 	@GetMapping
-    public void getAllBookings() {
-        System.out.println("Get All DATA");
+    public String getAllBookings() {
+        return "WORKED";
     }
 }
