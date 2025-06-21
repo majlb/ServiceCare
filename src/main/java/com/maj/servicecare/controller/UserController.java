@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.maj.servicecare.entity.User;
+import com.maj.servicecare.entity.Person;
 import com.maj.servicecare.repository.UserRepository;
 
 	@RestController
@@ -22,12 +22,12 @@ import com.maj.servicecare.repository.UserRepository;
 	    }
 
 	    @PostMapping
-	    public User create(@RequestBody User user) {
+	    public Person create(@RequestBody Person user) {
 	        return repo.save(user);
 	    }
 
 	    @GetMapping
-	    public List<User> readAll() {
+	    public List<Person> readAll() {
 	        return repo.findAll();
 	    }
 	}

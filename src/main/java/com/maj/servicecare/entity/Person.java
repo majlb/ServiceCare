@@ -5,7 +5,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 
 @Entity
-public class User {
+public class Person {
     @Id
     @GeneratedValue
     private Long id;
